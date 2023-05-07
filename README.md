@@ -14,6 +14,12 @@ User has to fill the form to go to payment gateway.
 
 In payment Gateway user can see and choose which payment option is needed
 
+
+## Netlify Link
+
+navaneeth-ecommerce-app.netlify.app
+
+
 ## Development server
 
 `http://localhost:4200/` is the server here, and project can be run using ng s -0
@@ -22,8 +28,3 @@ In payment Gateway user can see and choose which payment option is needed
 ## Build
 
 `ng build` is the command used to build the project. The build artifacts will be stored in the `dist/` directory.
-
-
-## Netlify Link
-
-navaneeth-ecommerce-app.netlify.app
