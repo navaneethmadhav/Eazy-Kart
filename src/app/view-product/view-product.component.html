@@ -1,0 +1,24 @@
+<section class="py-5">
+    <div class="sproduct">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="{{productdata.image}}" alt="..." /></div>
+                <div class="col-md-6">
+                    <div class="small mb-1">{{productdata.id}}</div>
+                    <h1 class="display-5 fw-bolder">{{productdata.title}}</h1>
+                    <div class="fs-5 mb-5">
+                        <span class="fw-bold"><i class="fa-solid fa-dollar-sign"></i>&nbsp;{{productdata.price}}</span>
+                        <span class="ms-5">{{productdata.rating.rate}}&nbsp;<i class="fa-solid fa-star text-warning w-25 h-25"></i></span>
+                        <span class="ms-5">Review : {{productdata.rating.count}}</span>
+                    </div>
+                    <p class="lead">{{productdata.description}}</p>
+                    <div class="d-flex">
+                        <button (click)="addcart(productdata)" class="btn btn-outline-success flex-shrink-0">
+                            Add to Cart &nbsp; <i class="fa fa-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

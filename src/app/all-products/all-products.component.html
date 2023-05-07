@@ -1,0 +1,65 @@
+<div class="p1">
+  <div class="container text-dark" style="margin-top: 50px;">
+      <div class="text-center row">
+        <div class="p-2 col-2">
+          <a (click)="filter('')">
+            <img class="w-50 rounded-pill" src="https://cdn1.vectorstock.com/i/1000x1000/94/60/online-shopping-and-sale-items-gifts-shopping-vector-29439460.jpg" alt="">
+            <h6>All Products</h6>
+          </a>
+        </div>
+        <div class="p-2 col-2">
+          <a (click)="filter('electronics')">
+            <img class="w-50 rounded-pill" src="https://img.freepik.com/premium-vector/home-electronics-appliances-circle-infographics-template_94477-1186.jpg" alt="">
+            <h6>Electronics</h6>
+          </a>
+        </div>
+        <div class="p-2 col-2">
+          <a (click)="filter('jewelery')">
+            <img class="w-50 rounded-pill" src="https://img.favpng.com/5/13/10/jewellery-cartoon-necklace-clip-art-png-favpng-vcjm1n4uh0emHJNmJM4RbRUM9.jpg" alt="">
+            <h6>Jewellery</h6>
+          </a>
+        </div>
+        <div class="p-2 col-2">
+          <a (click)="filter('fashion')">
+            <img class="w-50 rounded-pill" src="https://img.freepik.com/premium-vector/handsome-cute-cartoon-young-fashion-people-isolated-casual-wear-men-women-vector-illustration_81894-1686.jpg" alt="">
+            <h6>Fashion</h6>
+          </a>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="container">
+    <input type="text" (keyup)="search($event)" placeholder="Search your Products" class="form-control w-75 ms-5 mt-5 border-dark">
+</div>
+
+<!-- <pre>{{allproducts | json}}</pre> -->
+
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div *ngFor="let product of filterCategory | filter: searchterm : 'title'" class="col mb-5">
+                <div class="card h-100 align-items-center">
+                    <!-- Product image-->
+                    <img class="card-img-top" [src]="product.image" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{product.title}}</h5>
+                            <!-- Product price-->
+                            ${{product.price}}
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <a class="btn btn-outline-primary mt-auto" routerLink="view-product/{{product.id}}"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

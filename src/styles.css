@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Comfortaa:wght@300&family=Faster+One&family=Fredericka+the+Great&family=Frijole&family=Gloria+Hallelujah&family=Instrument+Serif&family=Roboto:wght@300&family=RocknRoll+One&family=Rubik+Dirt&family=Rubik:wght@300&family=Source+Sans+Pro&family=Titan+One&family=Yeon+Sung&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.p1{
+    margin-top: 130px;
+}
