@@ -6,6 +6,8 @@ This is a Ecommerce app created using Angular. Here used a Fakestore Api to get 
 
 This project contains features like filter products, search, payment gateway.
 
+User can view each product by clicking the " i " button in the cards of product in home page.
+
 User can add products to cart also user can delete single product or empty cart. 
 
 In cart user can get a discount when user clicks on the promo code template there.
