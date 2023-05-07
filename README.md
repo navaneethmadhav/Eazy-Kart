@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This is a Ecommerce app created using Angular. Here used a Fakestore Api to get the products.
 
-This project contains features like filter products by category, search, cart, payment gateway.
+This project contains features like filter products by category, search by name, cart, payment gateway.
 
 User can view each product by clicking the " i " button in the cards of product in home page.
 
