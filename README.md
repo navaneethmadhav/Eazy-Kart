@@ -2,26 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
 
+This is a Ecommerce app created using Angular. Here used a Fakestore Api to get the products.
+
+This project contains features like filter products, search, payment gateway.
+
+User can add products to cart also user can delete single product or empty cart. 
+
+In cart user can get a discount when user clicks on the promo code template there.
+
+User has to fill the form to go to payment gateway.
+
+In payment Gateway user can see and choose which payment option is needed
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+`http://localhost:4200/` is the server here, and project can be run using ng s -0
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`ng build` is the command used to build the project. The build artifacts will be stored in the `dist/` directory.
