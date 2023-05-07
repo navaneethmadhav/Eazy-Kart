@@ -22,3 +22,8 @@ In payment Gateway user can see and choose which payment option is needed
 ## Build
 
 `ng build` is the command used to build the project. The build artifacts will be stored in the `dist/` directory.
+
+
+## Netlify Link
+
+navaneeth-ecommerce-app.netlify.app
