@@ -16,6 +16,8 @@ User has to fill the form to go to payment gateway.
 
 In payment Gateway user can see and choose which payment option is needed
 
+This project also includes page not found section where user type a url that is not in the project's path, then page not found page will  be displayed.
+
 
 ## Netlify Link
 
